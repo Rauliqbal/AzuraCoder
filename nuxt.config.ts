@@ -4,7 +4,7 @@ export default defineNuxtConfig({
       head: {
          charset: "utf-8",
          viewport: "width=device-width, initial-scale=1",
-         meta: [{ name: "description", content: "This Website using Nuxt 3 and Tailwind CSS" }],
+         meta: [{ name: "google-site-verification", content: "Dh5WebMpXLjyWXTl9crOY7Y3rTQ7c1Bgfxyvvz6p1XM" }],
          link: [
             {
                href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono&display=swap",

@@ -31,11 +31,11 @@
       @apply px-2 py-1 text-green-500 font-semibold uppercase tracking-wide bg-green-100 rounded-md;
    }
 
-   .suhu {
+   .junior {
       @apply px-2 py-1 text-blue-500 font-semibold uppercase tracking-wide bg-blue-100 rounded-md;
    }
 
-   .mastah {
+   .suhu {
       @apply px-2 py-1 text-red-500 font-semibold uppercase tracking-wide bg-red-100 rounded-md;
    }
 }
