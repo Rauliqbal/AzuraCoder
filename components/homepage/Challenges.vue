@@ -8,7 +8,7 @@ const { data: challenges } = await useAsyncData("challenges", () => queryContent
 
       <article class="flex flex-col-reverse gap-6 mt-6">
          <div v-for="list in challenges" :key="list.id">
-            <LazyCard :to="list._path" :title="list.title" :description="list.description" :image="list.featureImage.url[0]" :tech="list.tech" :dificulty="list.dificulty" :dificulty-class="list.class" />
+            <ChallengeCard :to="list._path" :title="list.title" :description="list.description" :image="list.featureImage.url[0]" :tech="list.tech" :dificulty="list.dificulty" :dificulty-class="list.class" />
          </div>
       </article>
    </section>

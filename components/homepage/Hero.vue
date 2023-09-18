@@ -16,7 +16,18 @@
             </ul>
          </div>
          <div class="mx-auto">
-            <nuxt-img src="/images/hero-img.png" loading="lazy" />
+            <div class="relative">
+               <nuxt-img class="px-5" src="/images/hero-img.png" loading="lazy" />
+               <div class="top-28 animate-floating animation-delay-300 absolute bg-white shadow-xl rounded-full p-5">
+                  <img class="w-12" src="/images/html.svg" />
+               </div>
+               <div class="-top-6 left-48 animate-floating animation-delay-100 absolute bg-white shadow-xl rounded-full p-5">
+                  <img class="w-12" src="/images/css.svg" />
+               </div>
+               <div class="bottom-12 right-20 animate-floating animation-delay-200 absolute bg-white shadow-xl rounded-full p-5">
+                  <img class="w-12" src="/images/javascript.svg" />
+               </div>
+            </div>
          </div>
       </div>
    </section>

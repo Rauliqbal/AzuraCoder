@@ -39,4 +39,13 @@
    .suhu {
       @apply px-2 py-1 text-red-500 font-bold uppercase tracking-wide bg-red-100 dark:bg-red-900 rounded-md;
    }
+   .animation-delay-100 {
+      animation-delay: 1s;
+   }
+   .animation-delay-200 {
+      animation-delay: 2s;
+   }
+   .animation-delay-300 {
+      animation-delay: 3s;
+   }
 }
