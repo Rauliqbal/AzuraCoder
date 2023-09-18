@@ -4,9 +4,8 @@
 
 @layer base {
    body {
-      @apply font-inter bg-[#FAFCFF] dark:bg-slate-950;
+      @apply font-plusJakartaPlus bg-[#FAFCFF] dark:bg-slate-950;
    }
-
    section {
       @apply py-10;
    }
@@ -14,14 +13,16 @@
 
 @layer components {
    .title {
-      @apply text-2xl font-medium;
+      @apply text-xl font-bold dark:text-white;
    }
-
+   .subtitle {
+      @apply text-sm text-slate-600 dark:text-slate-400;
+   }
    .btn-primary {
       @apply px-6 py-3 bg-blue-500 hover:bg-blue-900 transition ease-out rounded-lg text-white font-bold flex justify-center;
    }
    .bg-sticky {
-      @apply bg-white/60 dark:bg-slate-900/70 backdrop-blur-lg border-b border-slate-200 dark:border-slate-700;
+      @apply bg-white/60 dark:bg-slate-900/70 backdrop-blur-lg shadow-sm;
    }
 }
 
@@ -29,15 +30,12 @@
    .paragraph {
       @apply tracking-wide leading-relaxed text-slate-600;
    }
-
    .pemula {
       @apply px-2 py-1 text-green-500 font-bold uppercase tracking-wide bg-green-100 rounded-md;
    }
-
    .junior {
       @apply px-2 py-1 text-blue-500 font-bold uppercase tracking-wide bg-blue-100 rounded-md;
    }
-
    .suhu {
       @apply px-2 py-1 text-red-500 font-bold uppercase tracking-wide bg-red-100 rounded-md;
    }

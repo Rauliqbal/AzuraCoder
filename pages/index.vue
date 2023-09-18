@@ -19,6 +19,6 @@ useHead({
 <template>
    <main>
       <LazyHomepageHero />
-      <HomepageAssets />
+      <LazyHomepageChallenges />
    </main>
 </template>

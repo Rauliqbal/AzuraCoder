@@ -1,4 +1,4 @@
-<script lang="ts" setup>
+<script setup>
 useHead({
    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.png" }],
 });
@@ -7,6 +7,7 @@ useHead({
 <template>
    <Navbar />
    <NuxtPage />
+   <Footer />
 </template>
 
 <style>
