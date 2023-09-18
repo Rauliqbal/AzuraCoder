@@ -22,7 +22,7 @@
       @apply px-6 py-3 bg-blue-500 hover:bg-blue-900 transition ease-out rounded-lg text-white font-bold flex justify-center;
    }
    .bg-sticky {
-      @apply bg-white/60 dark:bg-slate-900/70 backdrop-blur-lg shadow-sm;
+      @apply bg-white md:bg-white/60 dark:bg-slate-900/70 backdrop-blur-lg shadow-sm;
    }
 }
 
@@ -31,12 +31,12 @@
       @apply tracking-wide leading-relaxed text-slate-600;
    }
    .pemula {
-      @apply px-2 py-1 text-green-500 font-bold uppercase tracking-wide bg-green-100 rounded-md;
+      @apply px-2 py-1 text-green-500 font-bold uppercase tracking-wide bg-green-100 dark:bg-green-900 rounded-md;
    }
    .junior {
-      @apply px-2 py-1 text-blue-500 font-bold uppercase tracking-wide bg-blue-100 rounded-md;
+      @apply px-2 py-1 text-blue-500 font-bold uppercase tracking-wide bg-blue-100 dark:bg-blue-900 rounded-md;
    }
    .suhu {
-      @apply px-2 py-1 text-red-500 font-bold uppercase tracking-wide bg-red-100 rounded-md;
+      @apply px-2 py-1 text-red-500 font-bold uppercase tracking-wide bg-red-100 dark:bg-red-900 rounded-md;
    }
 }

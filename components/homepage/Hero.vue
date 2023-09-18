@@ -3,7 +3,7 @@
    <section class="container pt-32">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
          <div>
-            <h1 class="text-4xl md:text-5xl md:leading-snug tracking-wide font-bold text-slate-900 dark:text-white">
+            <h1 class="text-3xl md:text-4xl xl:text-5xl leading-snug md:leading-snug xl:leading-snug tracking-wide font-bold text-slate-900 dark:text-white">
                Buat lu yg pengen latih skill
                <span class="inline-block shadow-lg bg-white dark:bg-slate-800 rounded-lg px-4 -rotate-1"> <p class="text-transparent bg-clip-text bg-gradient-to-r from-sky-500 to-violet-500">Front-End Web</p> </span>, walaupun lu ga peduli.
             </h1>

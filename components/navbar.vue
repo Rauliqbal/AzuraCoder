@@ -34,24 +34,36 @@ const toggleTheme = () => {
          <div class="flex items-center justify-between">
             <div class="relative">
                <NuxtLink to="/">
-                  <h1 class="text-2xl font-semibold dark:text-slate-100">AzuraCoder/></h1>
+                  <h1 class="text-lg md:text-2xl font-semibold dark:text-slate-100">AzuraCoder/></h1>
                </NuxtLink>
             </div>
             <div class="flex items-center">
+               <div class="md:hidden mr-4">
+                  <div class="flex flex-row items-center justify-center">
+                     <button v-show="colorMode.preference === 'light'" class="transition-transform duration-100 hover:scale-125" @click="toggleTheme">
+                        <i class="text-xl ai-sun"></i>
+                     </button>
+                     <button v-show="colorMode.preference === 'dark'" class="transition-transform duration-100 hover:scale-125" @click="toggleTheme">
+                        <i class="text-xl ai-moon text-slate-400"></i>
+                     </button>
+                  </div>
+               </div>
                <input type="checkbox" class="peer hidden" name="hamburger" id="hamburger" />
                <label for="hamburger" class="relative peer-checked:hamburger z-30 block cursor-pointer md:hidden">
-                  <span class="transition duration-200 inline-block w-7 focus:w-0 h-1 bg-black rounded-xl after:rounded-xl before:rounded-xl"></span>
+                  <span
+                     class="transition-all duration-200 inline-block w-7 focus:w-0 h-1 bg-black after:bg-black before:bg-black dark:bg-slate-400 dark:after:bg-slate-400 dark:before:bg-slate-400 rounded-xl after:rounded-xl before:rounded-xl"
+                  ></span>
                </label>
-               <div @click="showHide" class="absolute inset-0 h-screen bg-gray-900/30 backdrop-blur-sm opacity-0 hidden peer-checked:opacity-100 peer-checked:block transition-all duration-300 md:peer-checked:hidden"></div>
-               <div class="peer-checked:translate-x-0 w-72 fixed top-0 right-0 bottom-0 translate-x-full transition duration-300 md:w-auto md:static md:translate-x-0 z-20 ease-out">
+               <div @click="showHide" class="absolute inset-0 h-screen bg-gray-900/30 opacity-0 hidden peer-checked:opacity-100 peer-checked:block transition-all duration-300 md:peer-checked:hidden"></div>
+               <div class="peer-checked:translate-x-0 w-72 sm:w-96 fixed top-0 right-0 bottom-0 translate-x-full transition duration-300 md:w-auto md:static md:translate-x-0 z-20 ease-out">
                   <div class="flex flex-col md:items-center md:flex-row h-full">
-                     <ul class="bg-white md:bg-transparent flex px-7 pt-28 md:pb-0 pb-[38rem] space-y-8 md:px-0 md:space-y-0 flex-col md:flex-row md:space-x-12 md:pt-0">
+                     <ul class="bg-white dark:bg-slate-800 md:bg-transparent flex px-7 pt-28 md:pb-0 pb-[38rem] space-y-8 md:px-0 md:space-y-0 flex-col md:flex-row md:space-x-10 md:pt-0">
                         <li><NuxtLink @click="showHide" class="dark:text-slate-400 capitalize tracking-wide hover:text-blue-500 transition ease-out duration-200 text-gray-800" to="/">Home</NuxtLink></li>
                         <li><NuxtLink @click="showHide" class="dark:text-slate-400 capitalize tracking-wide hover:text-blue-500 transition ease-out duration-200 text-gray-800" to="/">Challenges</NuxtLink></li>
                         <li><NuxtLink @click="showHide" class="dark:text-slate-400 capitalize tracking-wide hover:text-blue-500 transition ease-out duration-200 text-gray-800" to="/">Articles</NuxtLink></li>
-                        <li>
+                        <li class="hidden md:block">
                            <div class="flex flex-row items-center justify-center">
-                              <button class="transition-transform duration-100 hover:scale-125" @click="toggleTheme">
+                              <button v-show="colorMode.preference === 'light'" class="transition-transform duration-100 hover:scale-125" @click="toggleTheme">
                                  <i class="text-xl ai-sun"></i>
                               </button>
                               <button v-show="colorMode.preference === 'dark'" class="transition-transform duration-100 hover:scale-125" @click="toggleTheme">
@@ -72,7 +84,6 @@ const toggleTheme = () => {
 #hamburger ~ label span::after,
 #hamburger ~ label span::before {
    right: 0;
-   background: #000;
    transition-delay: 0.2s, 0s;
    transition-duration: 0.1s;
    transition-property: margin, transform;
