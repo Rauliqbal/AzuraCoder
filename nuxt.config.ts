@@ -7,7 +7,7 @@ export default defineNuxtConfig({
          meta: [{ name: "google-site-verification", content: "Dh5WebMpXLjyWXTl9crOY7Y3rTQ7c1Bgfxyvvz6p1XM" }],
          link: [
             {
-               href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono&display=swap",
+               href: "https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap",
                rel: "stylesheet",
             },
          ],
@@ -26,5 +26,8 @@ export default defineNuxtConfig({
          autoprefixer: {},
       },
    },
-   modules: ["@nuxt/content", "@nuxt/image", "nuxt-swiper"],
+   modules: ["@nuxt/content", "@nuxt/image", "nuxt-swiper", "@nuxtjs/color-mode"],
+   colorMode: {
+      classSuffix: "",
+   },
 });

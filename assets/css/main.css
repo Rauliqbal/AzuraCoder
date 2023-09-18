@@ -4,7 +4,7 @@
 
 @layer base {
    body {
-      @apply font-inter bg-[#f1f1f1];
+      @apply font-inter bg-[#FAFCFF] dark:bg-slate-950;
    }
 
    section {
@@ -18,7 +18,10 @@
    }
 
    .btn-primary {
-      @apply px-6 py-3 bg-blue-500 hover:bg-blue-900 transition ease-out rounded-lg text-white font-semibold flex justify-center;
+      @apply px-6 py-3 bg-blue-500 hover:bg-blue-900 transition ease-out rounded-lg text-white font-bold flex justify-center;
+   }
+   .bg-sticky {
+      @apply bg-white/60 dark:bg-slate-900/70 backdrop-blur-lg border-b border-slate-200 dark:border-slate-700;
    }
 }
 
@@ -28,14 +31,14 @@
    }
 
    .pemula {
-      @apply px-2 py-1 text-green-500 font-semibold uppercase tracking-wide bg-green-100 rounded-md;
+      @apply px-2 py-1 text-green-500 font-bold uppercase tracking-wide bg-green-100 rounded-md;
    }
 
    .junior {
-      @apply px-2 py-1 text-blue-500 font-semibold uppercase tracking-wide bg-blue-100 rounded-md;
+      @apply px-2 py-1 text-blue-500 font-bold uppercase tracking-wide bg-blue-100 rounded-md;
    }
 
    .suhu {
-      @apply px-2 py-1 text-red-500 font-semibold uppercase tracking-wide bg-red-100 rounded-md;
+      @apply px-2 py-1 text-red-500 font-bold uppercase tracking-wide bg-red-100 rounded-md;
    }
 }
