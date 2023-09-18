@@ -50,7 +50,7 @@ const toggleTheme = () => {
                         <li><NuxtLink @click="showHide" class="dark:text-slate-400 capitalize tracking-wide hover:text-blue-500 transition ease-out duration-200 text-gray-800" to="/">Blog</NuxtLink></li>
                         <li>
                            <div class="flex flex-row items-center justify-center">
-                              <button v-show="colorMode.preference === 'light'" class="transition-transform duration-100 hover:scale-125" @click="toggleTheme">
+                              <button class="transition-transform duration-100 hover:scale-125" @click="toggleTheme">
                                  <i class="text-xl ai-sun"></i>
                               </button>
                               <button v-show="colorMode.preference === 'dark'" class="transition-transform duration-100 hover:scale-125" @click="toggleTheme">
