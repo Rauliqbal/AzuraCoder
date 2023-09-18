@@ -24,7 +24,7 @@ defineProps({
             <p class="mt-4 tracking-wide dark:text-slate-400">{{ description }}</p>
             <NuxtLink :to="to" class="mt-8 btn-primary">Liat Challenge</NuxtLink>
          </div>
-         <img class="rounded-xl" :src="'/images/thumbnails/' + image" :alt="'Design Preview ' + title" />
+         <img class="rounded-xl" :src="'/images/thumbnails/challenge/' + image" :alt="'Design Preview ' + title" />
       </div>
    </div>
 </template>

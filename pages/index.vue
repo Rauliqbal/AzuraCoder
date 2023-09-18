@@ -20,5 +20,7 @@ useHead({
    <main>
       <LazyHomepageHero />
       <LazyHomepageChallenges />
+      <LazyHomepageArticles />
+      <LazyHomepageTeam />
    </main>
 </template>

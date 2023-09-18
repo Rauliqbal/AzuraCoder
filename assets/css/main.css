@@ -7,16 +7,16 @@
       @apply font-plusJakartaPlus bg-[#FAFCFF] dark:bg-slate-950;
    }
    section {
-      @apply py-10;
+      @apply py-12 md:py-24;
    }
 }
 
 @layer components {
    .title {
-      @apply text-xl font-bold dark:text-white;
+      @apply text-xl md:text-2xl font-bold dark:text-white;
    }
    .subtitle {
-      @apply text-sm text-slate-600 dark:text-slate-400;
+      @apply text-sm md:text-base text-slate-600 dark:text-slate-400;
    }
    .btn-primary {
       @apply px-6 py-3 bg-blue-500 hover:bg-blue-900 transition ease-out rounded-lg text-white font-bold flex justify-center;
