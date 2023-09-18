@@ -30,4 +30,5 @@ export default defineNuxtConfig({
    colorMode: {
       classSuffix: "",
    },
+   plugins: [{ src: "~/plugins/vercel.js", mode: "client" }],
 });
