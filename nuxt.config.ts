@@ -29,5 +29,7 @@ export default defineNuxtConfig({
    modules: ["@nuxt/content", "@nuxt/image", "nuxt-swiper", "@nuxtjs/color-mode"],
    colorMode: {
       classSuffix: "",
+      preference: "light",
+      fallback: "light",
    },
 });
