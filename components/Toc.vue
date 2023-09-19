@@ -21,7 +21,7 @@ const flattenLinks = (links) => {
 
 <template>
    <nav class="p-4 rounded-2xl">
-      <h5 class="text-xl font-bold">Daftar isi 🔥</h5>
+      <h5 class="text-xl font-bold dark:text-white">Daftar isi 🔥</h5>
       <hr class="mt-5" />
       <ul class="mt-4">
          <!-- render each link with depth class -->

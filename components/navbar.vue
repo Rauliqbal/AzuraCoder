@@ -50,9 +50,7 @@ const toggleTheme = () => {
                </div>
                <input type="checkbox" class="peer hidden" name="hamburger" id="hamburger" />
                <label for="hamburger" class="relative peer-checked:hamburger z-30 block cursor-pointer md:hidden">
-                  <span
-                     class="transition-all duration-200 inline-block w-7 focus:w-0 h-1 bg-black after:bg-black before:bg-black dark:bg-slate-400 dark:after:bg-slate-400 dark:before:bg-slate-400 rounded-xl after:rounded-xl before:rounded-xl"
-                  ></span>
+                  <span class="duration-200 inline-block w-7 focus:w-0 h-1 bg-black after:bg-black before:bg-black dark:bg-slate-400 dark:after:bg-slate-400 dark:before:bg-slate-400 rounded-xl after:rounded-xl before:rounded-xl"></span>
                </label>
                <div @click="showHide" class="absolute inset-0 h-screen bg-gray-900/30 opacity-0 hidden peer-checked:opacity-100 peer-checked:block transition-all duration-300 md:peer-checked:hidden"></div>
                <div class="peer-checked:translate-x-0 w-72 sm:w-96 fixed top-0 right-0 bottom-0 translate-x-full transition duration-300 md:w-auto md:static md:translate-x-0 z-20 ease-out">

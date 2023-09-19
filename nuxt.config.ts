@@ -40,7 +40,7 @@ export default defineNuxtConfig({
       },
    },
 
-   // disqus: {
-   //    shortname: "sukakode-1",
-   // },
+   disqus: {
+      shortname: "azuracodere",
+   },
 });
