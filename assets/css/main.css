@@ -4,7 +4,7 @@
 
 @layer base {
    body {
-      @apply font-plusJakartaPlus bg-[#FAFCFF] dark:bg-slate-950;
+      @apply font-plusJakartaPlus bg-[#FAFCFF] dark:bg-slate-900;
    }
    section {
       @apply py-12 md:py-24;
@@ -27,8 +27,8 @@
 }
 
 @layer utilities {
-   .paragraph {
-      @apply tracking-wide leading-relaxed text-slate-600;
+   .desc {
+      @apply tracking-wide leading-relaxed text-slate-600 dark:text-slate-400;
    }
    .pemula {
       @apply px-2 py-1 text-green-500 font-bold uppercase tracking-wide bg-green-100 dark:bg-green-900 rounded-md;
@@ -48,4 +48,22 @@
    .animation-delay-300 {
       animation-delay: 3s;
    }
+   code {
+      @apply !font-JetBrainsMono;
+   }
+}
+
+::-webkit-scrollbar {
+   width: 8px;
+   height: 8px;
+}
+::-webkit-scrollbar-track {
+   background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+   background: #888;
+   border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+   background: #555;
 }

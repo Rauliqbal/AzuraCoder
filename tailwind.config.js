@@ -5,6 +5,7 @@ module.exports = {
    theme: {
       fontFamily: {
          plusJakartaPlus: ["Plus Jakarta Sans", "sans-serif"],
+         JetBrainsMono: ["JetBrains Mono", "monospace"],
       },
       container: {
          center: true,

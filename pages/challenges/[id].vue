@@ -18,7 +18,7 @@ useHead({
    <main>
       <div class="container pt-28">
          <section class="">
-            <div class="bg-white rounded-2xl p-4 md:p-10 shadow-md">
+            <div class="bg-white dark:bg-slate-800 rounded-2xl p-4 md:p-10 shadow-md">
                <Swiper
                   :modules="[SwiperAutoplay, SwiperPagination]"
                   :slides-per-view="1"
@@ -33,11 +33,11 @@ useHead({
                   }"
                >
                   <SwiperSlide class="pb-10" v-for="slide in data.article.featureImage.url" :key="slide">
-                     <img class="w-full md:h-[36rem] object-cover rounded-xl" :src="'/images/thumbnails/' + slide" :alt="'Thumbnail ' + data.article.title" />
+                     <img class="w-full md:h-[36rem] object-cover rounded-xl" :src="'/images/thumbnails/challenge/' + slide" :alt="'Thumbnail ' + data.article.title" />
                   </SwiperSlide>
                </Swiper>
 
-               <h1 class="text-2xl md:text-4xl font-bold my-8">{{ data.article.title }}</h1>
+               <h1 class="text-2xl md:text-4xl font-bold my-8 dark:text-white">{{ data.article.title }}</h1>
 
                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-end">
                   <div>
@@ -49,7 +49,7 @@ useHead({
                         </div>
                         <p :class="data.article.dificulty">{{ data.article.dificulty }}</p>
                      </div>
-                     <p class="paragraph mt-4">{{ data.article.description }}</p>
+                     <p class="desc mt-4">{{ data.article.description }}</p>
                   </div>
                   <div>
                      <a :href="'/files/' + data.article.fileAssets" download class="mt-8 btn-primary">Download Assets</a>
@@ -58,33 +58,32 @@ useHead({
             </div>
 
             <div class="grid md:grid-cols-3 mt-8 gap-8">
-               <div class="order-last md:order-first col-span-2 bg-white rounded-2xl p-4 md:p-10 shadow-md">
+               <div class="order-last md:order-first col-span-2 bg-white dark:bg-slate-800 rounded-2xl p-4 md:p-10 shadow-md">
                   <h2 class="title mb-4">Pesan dari gw <i class="ai-pin"></i></h2>
-                  <p class="paragraph">
+                  <p class="desc">
                      Sebelum mulai challenges, kamu harus download file assets nya terlebih dahulu yang sudah di sediakan, kamu bisa menggunakan tool apa aja untuk menyelesaikan challenge ini, jadi kamu dapat berlatih dan mencobanya.
                   </p>
 
-                  <p class="paragraph mt-4">
+                  <p class="desc mt-4">
                      Gw pengen lu nyoba sesuatu yang lebih hebat, cobalah nulis style lu dengan Sass (CSS with superpowers). dan coba memperkirakakn waktu untuk menyelesaikan projek ini. apakah waktu pengerjaannya sesuai perkiraan lu.
                   </p>
 
-                  <p class="paragraph mt-4">Semoga sukses ya broo, sorry bro kalo ada kata yg menyinggung atau kurang baik🙏</p>
+                  <p class="desc mt-4">Semoga sukses ya broo, sorry bro kalo ada kata yg menyinggung atau kurang baik🙏</p>
                </div>
 
-               <div class="order-first md:order-last col-span-2 md:col-span-1 bg-white rounded-2xl p-4 md:p-10 shadow-md h-fit">
+               <div class="order-first md:order-last col-span-2 md:col-span-1 bg-white dark:bg-slate-800 rounded-2xl p-4 md:p-10 shadow-md h-fit">
                   <h2 class="title mb-4">UI Designer <i class="ai-image"></i></h2>
                   <div class="flex items-center gap-4">
                      <img class="w-16 border-4 p-1 border-blue-400 rounded-full" :src="'/images/users/' + data.article.author.imageUrl" :alt="data.article.title" />
                      <div>
-                        <p class="font-semibold tracking-wide text-lg">{{ data.article.author.name }}</p>
-                        <a class="font-medium hover:text-blue-500 transition ease-out" :href="data.article.author.profileUrl" target="_blank">Kunjungi Profile <i class="ai-link-out"></i></a>
+                        <p class="font-semibold tracking-wide text-lg dark:text-white">{{ data.article.author.name }}</p>
+                        <a class="font-medium hover:text-blue-500 transition ease-out dark:text-slate-400" :href="data.article.author.profileUrl" target="_blank">Kunjungi Profile <i class="ai-link-out"></i></a>
                      </div>
                   </div>
                </div>
             </div>
          </section>
       </div>
-      <hr class="my-16" />
    </main>
 </template>
 

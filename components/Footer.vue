@@ -20,16 +20,17 @@ const socialMedia = [
 ];
 </script>
 <template>
-   <footer class="bg-slate-100 dark:bg-slate-900/40">
+   <footer class="bg-slate-100 dark:bg-slate-800">
       <div class="flex flex-col justify-center items-center py-8">
          <div class="flex gap-12">
-            <a v-for="socmed in socialMedia" :key="socmed.id" :href="socmed.url" target="_blank" class="text-slate-400 text-2xl hover:text-slate-600 transition ease-out duration-300">
+            <NuxtLink v-for="socmed in socialMedia" :key="socmed.id" :to="socmed.url" target="_blank" rel="external" class="text-slate-400 text-2xl hover:text-slate-600 transition ease-out duration-300">
                <i :class="socmed.icon"></i>
-            </a>
+            </NuxtLink>
          </div>
          <div class="mt-6">
             <span class="text-sm text-slate-600 dark:text-slate-400"
-               >&copy; <span class="font-semibold">2022 - {{ date.getFullYear() }} <a class="border-b border-dashed border-blue-400" href="https://rauliqbal.my.id" target="_blank">Rauliqbal</a></span> All rights reserved</span
+               >&copy; <span class="font-semibold">2022 - {{ date.getFullYear() }} <NuxtLink class="border-b border-dashed border-blue-400" to="https://rauliqbal.my.id" target="_blank" rel="external">Rauliqbal</NuxtLink></span> All rights
+               reserved</span
             >
          </div>
       </div>

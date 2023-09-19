@@ -34,7 +34,7 @@ const toggleTheme = () => {
          <div class="flex items-center justify-between">
             <div class="relative">
                <NuxtLink to="/">
-                  <h1 class="text-lg md:text-2xl font-semibold dark:text-slate-100">AzuraCoder/></h1>
+                  <h2 class="text-lg md:text-2xl font-semibold dark:text-slate-100">AzuraCoder/></h2>
                </NuxtLink>
             </div>
             <div class="flex items-center">
@@ -57,10 +57,11 @@ const toggleTheme = () => {
                <div @click="showHide" class="absolute inset-0 h-screen bg-gray-900/30 opacity-0 hidden peer-checked:opacity-100 peer-checked:block transition-all duration-300 md:peer-checked:hidden"></div>
                <div class="peer-checked:translate-x-0 w-72 sm:w-96 fixed top-0 right-0 bottom-0 translate-x-full transition duration-300 md:w-auto md:static md:translate-x-0 z-20 ease-out">
                   <div class="flex flex-col md:items-center md:flex-row h-full">
-                     <ul class="bg-white dark:bg-slate-800 dark:md:bg-transparent md:bg-transparent flex px-7 pt-28 md:pb-0 pb-[38rem] space-y-8 md:px-0 md:space-y-0 flex-col md:flex-row md:space-x-10 md:pt-0">
+                     <ul class="bg-white dark:bg-slate-800 dark:md:bg-transparent md:bg-transparent flex items-center px-7 pt-28 md:pb-0 pb-[38rem] space-y-8 md:px-0 md:space-y-0 flex-col md:flex-row md:space-x-10 md:pt-0">
                         <li><NuxtLink @click="showHide" class="dark:text-slate-400 capitalize tracking-wide hover:text-blue-500 transition ease-out duration-200 text-gray-800" to="/">Home</NuxtLink></li>
                         <li><NuxtLink @click="showHide" class="dark:text-slate-400 capitalize tracking-wide hover:text-blue-500 transition ease-out duration-200 text-gray-800" to="/">Challenges</NuxtLink></li>
                         <li><NuxtLink @click="showHide" class="dark:text-slate-400 capitalize tracking-wide hover:text-blue-500 transition ease-out duration-200 text-gray-800" to="/">Articles</NuxtLink></li>
+                        <li class="text-slate-600 dark:text-white hidden md:block">|</li>
                         <li class="hidden md:block">
                            <div class="flex flex-row items-center justify-center">
                               <button v-show="colorMode.preference === 'light'" class="transition-transform duration-100 hover:scale-125" @click="toggleTheme">
@@ -71,6 +72,7 @@ const toggleTheme = () => {
                               </button>
                            </div>
                         </li>
+                        <li><NuxtLink to="http://bit.ly/ForumAzuraCoder" target="_blank" rel="external" class="btn-primary text-sm">Gabung Grub</NuxtLink></li>
                      </ul>
                   </div>
                </div>

@@ -26,10 +26,21 @@ export default defineNuxtConfig({
          autoprefixer: {},
       },
    },
-   modules: ["@nuxt/content", "@nuxt/image", "nuxt-swiper", "@nuxtjs/color-mode"],
+   modules: ["@nuxt/content", "@nuxt/image", "nuxt-swiper", "@nuxtjs/color-mode", "nuxt-disqus"],
    colorMode: {
       classSuffix: "",
       preference: "light",
       fallback: "light",
    },
+
+   extends: "@nuxt-themes/typography",
+   content: {
+      highlight: {
+         theme: "github-dark",
+      },
+   },
+
+   // disqus: {
+   //    shortname: "sukakode-1",
+   // },
 });

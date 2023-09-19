@@ -9,7 +9,7 @@ defineProps({
 });
 </script>
 <template>
-   <div class="px-8 py-10 bg-white dark:bg-slate-900/40 rounded-xl">
+   <div class="px-8 py-10 bg-white dark:bg-slate-800 rounded-xl">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-10 items-center">
          <div class="order-last md:order-first">
             <div class="flex justify-between">
@@ -21,10 +21,10 @@ defineProps({
                <p :class="dificulty">{{ dificulty }}</p>
             </div>
             <h3 class="text-2xl font-semibold mt-4 dark:text-white">{{ title }}</h3>
-            <p class="mt-4 tracking-wide dark:text-slate-400">{{ description }}</p>
+            <p class="mt-4 desc">{{ description }}</p>
             <NuxtLink :to="to" class="mt-8 btn-primary">Liat Challenge</NuxtLink>
          </div>
-         <img class="rounded-xl" :src="'/images/thumbnails/challenge/' + image" :alt="'Design Preview ' + title" />
+         <NuxtImg class="rounded-xl" :title="title" :src="'/images/thumbnails/challenge/' + image" width="640" height="480" :alt="'Design Preview ' + title" />
       </div>
    </div>
 </template>

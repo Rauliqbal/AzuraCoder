@@ -33,7 +33,7 @@ const teams = [
 
       <div class="grid grid-cols-2 md:grid-cols-4 mt-10 gap-8 md:px-24">
          <div v-for="team in teams" :key="team" class="flex flex-col items-center">
-            <img class="w-28 rounded-full" :src="'/images/users/' + team.image" alt="" />
+            <img class="w-28 rounded-full" :src="'/images/users/' + team.image" width="112" height="112" :alt="'Photo ' + team.name" />
             <h3 class="text-sm md:text-base text-slate-600 dark:text-white tracking-wide font-bold mt-6">{{ team.name }}</h3>
             <p class="text-sm md:text-base text-indigo-500 font-semibold">{{ team.role }}</p>
          </div>
