@@ -25,21 +25,10 @@ useHead({
       { property: "og:image", content: `https://sukakode.vercel.app/images/thumbnails/article/${data.value.article.featureImage}` },
    ],
 });
-nuxtApp.provide("formatDate", (date) => {
-   const options = { year: "numeric", month: "long", day: "numeric" };
-   return new Date(date).toLocaleDateString("en-IN", options);
-});
-
-// Prints "Hello name!"
-console.log(nuxtApp.$formatDate("2023-08-09T09:00:00.000Z"));
-
-// onMounted(() => {
-//    formatDate(date) {
-//       const options = { year: "numeric", month: "long", day: "numeric" };
-//       return new Date(date).toLocaleDateString("en", options);
-//    }
+// nuxtApp.provide("formatDate", (date) => {
+//    const options = { year: "numeric", month: "long", day: "numeric" };
+//    return new Date(date).toLocaleDateString("en-IN", options);
 // });
-// console.log(formatDate("2023-08-09T09:00:00.000Z"));
 </script>
 <template>
    <main>
@@ -57,7 +46,7 @@ console.log(nuxtApp.$formatDate("2023-08-09T09:00:00.000Z"));
                      <img class="w-10 rounded-full" :src="'/images/users/' + data.article.author.imageUrl" alt="Rauliqbal a Front-End Developer" />
                      <span class="text-sm text-gray-500 font-medium hover:text-blue-500 transition">{{ data.article.author.name }}</span></a
                   >
-                  <span class="text-sm text-gray-500 font-medium">{{ nuxtApp.$formatDate(data.article.publishedAt) }}</span>
+                  <!-- <span class="text-sm text-gray-500 font-medium">{{ nuxtApp.$formatDate(data.article.publishedAt) }}</span> -->
                </div>
             </header>
 
