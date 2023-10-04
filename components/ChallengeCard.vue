@@ -14,7 +14,7 @@ defineProps({
          <div class="order-last md:order-first">
             <div class="flex justify-between">
                <div class="flex items-center gap-1">
-                  <p class="p-[2px] px-2 bg-slate-200 dark:bg-slate-800 text-[12px] font-semibold text-slate-500 rounded-md" v-for="i in tech" :key="i">
+                  <p class="p-[2px] px-2 bg-slate-200 dark:bg-slate-700 text-[12px] font-semibold text-slate-500 dark:text-slate-400 rounded-md" v-for="i in tech" :key="i">
                      {{ i }}
                   </p>
                </div>

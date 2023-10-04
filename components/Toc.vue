@@ -24,7 +24,7 @@ const flattenLinks = (links) => {
       <ul class="mt-4">
          <!-- render each link with depth class -->
          <li v-for="link of flattenLinks(links)" :key="link.id" :class="`py-1 toc-link _${link.depth}`">
-            <a :href="`#${link.id}`">
+            <a class="prose-a" :href="`#${link.id}`">
                {{ link.text }}
             </a>
          </li>
@@ -51,5 +51,9 @@ const flattenLinks = (links) => {
 
 .toc-link._undefined {
    @apply pl-8;
+}
+
+:is(.dark .prose-a) {
+   color: #c2c2c2;
 }
 </style>
