@@ -20,7 +20,7 @@ onMounted: ({
             <img :src="'/images/thumbnails/article/' + featureImage" width="640" height="480" :title="title" :alt="'Cover ' + title" />
          </div>
          <div class="px-1 mt-4">
-            <h3 class="font-bold dark:text-white tracking-wide line-clamp-1">{{ title }}</h3>
+            <h3 class="font-bold dark:text-white tracking-wide line-clamp-1 hover:underline">{{ title }}</h3>
             <p class="desc mt-1 line-clamp-2">{{ description }}</p>
          </div>
       </div>
