@@ -22,10 +22,10 @@
       @apply text-xl md:text-2xl font-bold dark:text-white;
    }
    .subtitle {
-      @apply text-sm md:text-base text-slate-600 dark:text-slate-400;
+      @apply text-sm md:text-base text-slate-600 dark:text-slate-300;
    }
    .btn-primary {
-      @apply inline-flex text-sm px-6 py-3 bg-blue-500 hover:bg-blue-900 transition ease-out rounded-lg text-white font-bold  justify-center;
+      @apply inline-flex text-sm px-6 py-3 bg-slate-950 hover:bg-slate-800 dark:bg-gradient-to-r dark:hover:bg-gradient-to-b from-indigo-500 to-purple-500 transition-all ease-out rounded-full text-white font-bold  justify-center;
    }
    .bg-sticky {
       @apply bg-white md:bg-white/60 dark:bg-slate-900/70 backdrop-blur-lg shadow-sm;
@@ -34,7 +34,7 @@
 
 @layer utilities {
    .desc {
-      @apply tracking-wide leading-relaxed text-slate-600 dark:text-slate-400;
+      @apply tracking-wide leading-relaxed text-slate-600 dark:text-slate-300;
    }
    .pemula {
       @apply px-2 py-1 text-green-500 font-bold uppercase tracking-wide bg-green-100 dark:bg-green-900 rounded-md;

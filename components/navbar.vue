@@ -23,12 +23,12 @@ const toggleTheme = () => {
 </script>
 
 <template>
-   <header class="fixed inset-x-0 z-20 py-4  transition-all">
+   <header class="fixed inset-x-0 z-20 py-4 transition-all">
       <div class="container">
          <div class="flex items-center justify-between">
             <div class="relative">
                <NuxtLink to="/">
-                  <h2 class="text-lg md:text-2xl font-semibold dark:text-slate-100">AzuraCoder/></h2>
+                  <h1 class="text-lg md:text-2xl font-semibold dark:text-slate-100">AzuraCoder</h1>
                </NuxtLink>
             </div>
             <div class="flex items-center">
