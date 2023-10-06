@@ -26,10 +26,15 @@ useHead({
    ],
 });
 
-nuxtApp.provide("formatDate", (date) => {
-   const options = { year: "numeric", month: "long", day: "numeric" };
-   return new Date(date).toLocaleDateString("en-IN", options);
-});
+const showFormattedDate = (date) => {
+  const options = {
+    year: "numeric",
+    month: "long",
+    day: "numeric"
+  }
+  return new Date(date).toLocaleDateString("id-ID", options)
+}
+
 </script>
 <template>
    <main>
@@ -47,7 +52,7 @@ nuxtApp.provide("formatDate", (date) => {
                      <img class="w-10 rounded-full" :src="'/images/users/' + data.article.author.imageUrl" alt="Rauliqbal a Front-End Developer" />
                      <span class="text-sm text-gray-500 font-medium hover:text-blue-500 transition">{{ data.article.author.name }}</span></a
                   >
-                  <span class="text-sm text-gray-500 font-medium">{{ nuxtApp.$formatDate(data.article.publishedAt) }}</span>
+                  <span class="text-sm text-gray-500 font-medium">{{ showFormattedDate(data.article.publishedAt) }}</span>
                </div>
             </header>
 
