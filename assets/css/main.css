@@ -37,13 +37,13 @@
       @apply tracking-wide leading-relaxed text-slate-600 dark:text-slate-300;
    }
    .pemula {
-      @apply px-2 py-1 text-green-500 font-bold uppercase tracking-wide bg-green-100 dark:bg-green-900 rounded-md;
+      @apply px-2 py-1 text-[12px] text-green-500 font-bold uppercase tracking-wide bg-green-100 dark:bg-green-900 rounded-md;
    }
    .junior {
-      @apply px-2 py-1 text-blue-500 font-bold uppercase tracking-wide bg-blue-100 dark:bg-blue-900 rounded-md;
+      @apply px-2 py-1 text-[12px] text-blue-500 font-bold uppercase tracking-wide bg-blue-100 dark:bg-blue-900 rounded-md;
    }
    .suhu {
-      @apply px-2 py-1 text-red-500 font-bold uppercase tracking-wide bg-red-100 dark:bg-red-900 rounded-md;
+      @apply px-2 py-1 text-[12px] text-red-500 font-bold uppercase tracking-wide bg-red-100 dark:bg-red-900 rounded-md;
    }
    .animation-delay-100 {
       animation-delay: 1s;

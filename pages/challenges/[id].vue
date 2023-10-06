@@ -19,7 +19,7 @@ useHead({
 <template>
   <main>
     <section class="container pt-32">
-      <div class="grid grid-cols-3 gap-8 items-start">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
         <div class="col-span-2">
           <Swiper
             :modules="[SwiperAutoplay, SwiperPagination]"
@@ -47,7 +47,33 @@ useHead({
             </SwiperSlide>
           </Swiper>
 
-          <div class="">
+          <div 
+          class="md:hidden bg-white dark:bg-slate-800 rounded-2xl p-4 shadow-md mt-8"
+        >
+          <div class="flex justify-between mb-6">
+            <div class="flex items-center gap-1">
+              <p
+                class="p-[2px] px-2 bg-slate-200 dark:bg-slate-700 text-[12px] font-semibold text-slate-500 dark:text-slate-400 rounded-md"
+                v-for="i in data.article.tech"
+                :key="i"
+              >
+                {{ i }}
+              </p>
+            </div>
+            <p :class="data.article.dificulty">{{ data.article.dificulty }}</p>
+          </div>
+          <h3 class="text-2xl font-bold dark:text-white">
+            {{ data.article.title }}
+          </h3>
+          <p class="desc mt-4">{{ data.article.description }}</p>
+          <a
+            :href="'/files/' + data.article.fileAssets"
+            download
+            class="mt-8 btn-primary flex"
+            >Download Assets</a
+          >
+        </div>
+          <div class="mt-8">
             <div
               class="order-last md:order-first col-span-2 bg-white dark:bg-slate-800 rounded-2xl p-4 md:p-10 shadow-md"
             >
@@ -72,8 +98,11 @@ useHead({
               </p>
             </div>
 
-            <div
-              class="order-first md:order-last col-span-2 md:col-span-1 bg-white dark:bg-slate-800 rounded-2xl p-4 md:p-10 shadow-md h-fit"
+            
+          </div>
+
+          <div
+              class="mt-8 bg-white dark:bg-slate-800 rounded-2xl p-4 md:p-10 shadow-md h-fit"
             >
               <h2 class="title mb-4">UI Designer <i class="ai-image"></i></h2>
               <div class="flex items-center gap-4">
@@ -97,20 +126,24 @@ useHead({
                 </div>
               </div>
             </div>
-          </div>
         </div>
 
-        <div
-          class="sticky md:top-24 items-start bg-white dark:bg-slate-800 rounded-2xl p-4 shadow-md"
+
+        <div 
+          class="hidden md:block sticky md:top-24 items-start bg-white dark:bg-slate-800 rounded-2xl p-4 shadow-md"
         >
-        <div class="flex justify-between mb-6">
-         <div class="flex items-center gap-1">
-            <p class="p-[2px] px-2 bg-slate-200 dark:bg-slate-700 text-[12px] font-semibold text-slate-500 dark:text-slate-400 rounded-md" v-for="i in tech" :key="i">
-               {{ i }}
-            </p>
-         </div>
-         <p :class="dificulty">{{ dificulty }}</p>
-      </div>
+          <div class="flex justify-between mb-6">
+            <div class="flex items-center gap-1">
+              <p
+                class="p-[2px] px-2 bg-slate-200 dark:bg-slate-700 text-[12px] font-semibold text-slate-500 dark:text-slate-400 rounded-md"
+                v-for="i in data.article.tech"
+                :key="i"
+              >
+                {{ i }}
+              </p>
+            </div>
+            <p :class="data.article.dificulty">{{ data.article.dificulty }}</p>
+          </div>
           <h3 class="text-2xl font-bold dark:text-white">
             {{ data.article.title }}
           </h3>
