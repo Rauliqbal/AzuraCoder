@@ -1,2 +1,4 @@
 <script setup></script>
-<template>chal</template>
+<template>
+  <ChallengespageList/>
+</template>

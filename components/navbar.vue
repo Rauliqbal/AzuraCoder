@@ -51,7 +51,7 @@ const toggleTheme = () => {
                   <div class="flex flex-col md:items-center md:flex-row h-full">
                      <ul class="bg-white dark:bg-slate-800 dark:md:bg-transparent md:bg-transparent flex items-center px-7 pt-28 md:pb-0 pb-[38rem] space-y-8 md:px-0 md:space-y-0 flex-col md:flex-row md:space-x-10 md:pt-0">
                         <li><NuxtLink @click="showHide" class="dark:text-slate-400 capitalize tracking-wide hover:text-blue-500 transition ease-out duration-200 text-gray-800" to="/">Home</NuxtLink></li>
-                        <li><NuxtLink @click="showHide" class="dark:text-slate-400 capitalize tracking-wide hover:text-blue-500 transition ease-out duration-200 text-gray-800" to="/">Challenges</NuxtLink></li>
+                        <li><NuxtLink @click="showHide" class="dark:text-slate-400 capitalize tracking-wide hover:text-blue-500 transition ease-out duration-200 text-gray-800" to="/challenges">Challenges</NuxtLink></li>
                         <li><NuxtLink @click="showHide" class="dark:text-slate-400 capitalize tracking-wide hover:text-blue-500 transition ease-out duration-200 text-gray-800" to="/articles">Articles</NuxtLink></li>
                         <li class="text-slate-600 dark:text-white hidden md:block">|</li>
                         <li class="hidden md:block">
