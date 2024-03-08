@@ -8,7 +8,7 @@ export default defineNuxtConfig({
       meta: [
         {
           name: "google-site-verification",
-          content: "Dh5WebMpXLjyWXTl9crOY7Y3rTQ7c1Bgfxyvvz6p1XM",
+          content: "Wqhi12LxOdL03DLwnoEbTzW9F_mwTrseHwEgfSPc9Pw",
         },
         {
           name: "title",
@@ -51,7 +51,7 @@ export default defineNuxtConfig({
         },
       ],
       link: [
-         { rel: "canonical", href: "https://azuracoder.vercel.app/" },
+        { rel: "canonical", href: "https://azuracoder.vercel.app/" },
         {
           href: "https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap",
           rel: "stylesheet",
